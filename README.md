@@ -53,7 +53,7 @@ This project is a web application that allows users to view their Google Maps Ti
      cd backend
      npm install
      ```
-   - Create a Python virtual environment and activate it (if necessary for backend Python scripts).
+   - Create a Python virtual environment and activate it (if necessary for backend Python scripts).  (the instructions below assume that this virtual environment is given the name "venv")
    - Install Python dependencies if specified in any `requirements.txt` file.
    - Edit "index.js" to change the baseDir to the local folder on your Mac/PC titled "Semantic Location History" (from the Google Maps Timeline history which you downloaded from Google Takeout and unzipped onto your machine).
 
@@ -76,6 +76,7 @@ This project is a web application that allows users to view their Google Maps Ti
 1. **Start the Backend**:
    - In the `backend/` directory, run:
      ```sh
+     .\venv\Scripts\activate
      node index.js
      ```
    - This will start the server, which will handle data requests from the frontend.
