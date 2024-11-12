@@ -6,7 +6,7 @@ This project is a web application that allows users to view their Google Maps Ti
 - **Frontend (geo-history-frontend)**: Provides a browser-based interface for users to view, filter, and interact with their location history data, including listing "happenings" for a selected date and visualizing them on a map using the Google Maps API.
 - Both backend and frontend can be run on the same personal computer such as a Windows or Mac machine.  They each handle a different part of the functionality.
 - Some functionality from the Google Timeline was omitted here for speed and expediency; this application shows a straight line path for each segment, which is all that can be reliably reconstructed from the semantic location history.  To show more (such as the result of snap to road), the raw location history would need to be loaded which would be more complex and would slow the page down considerably.
-- This does not allow editing of any kind.
+- This does not allow the user to edit the timeline paths or events in any way, it only allows the user to view them.
 
 ## Project Structure
 
