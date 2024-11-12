@@ -4,7 +4,9 @@ This project is a web application that allows users to view their Google Maps Ti
 
 - **Backend (geo-history-backend)**: Handles server-side operations, including reading Google Maps Timeline location history files and providing necessary data to the frontend.
 - **Frontend (geo-history-frontend)**: Provides a browser-based interface for users to view, filter, and interact with their location history data, including listing "happenings" for a selected date and visualizing them on a map using the Google Maps API.
-Both backend and frontend can be run on the same personal computer such as a Windows or Mac machine.  They each handle a different part of the functionality.
+- Both backend and frontend can be run on the same personal computer such as a Windows or Mac machine.  They each handle a different part of the functionality.
+- Some functionality from the Google Timeline was omitted here for speed and expediency; this application shows a straight line path for each segment, which is all that can be reliably reconstructed from the semantic location history.  To show more (such as the result of snap to road), the raw location history would need to be loaded which would be more complex and would slow the page down considerably.
+- This does not allow editing of any kind.
 
 ## Project Structure
 
@@ -33,8 +35,9 @@ Both backend and frontend can be run on the same personal computer such as a Win
 - **Node.js**: The backend requires Node.js for running the server.
 - **Python**: Some backend operations require Python.
 - **Google Maps API Key**: You need a Google Maps API key to enable map features in the frontend. Set this key in the environment file as described below.
-- ** GOOGLE MAPS MAP ID ** This is another Google Maps API thing you need to create and use.
-- It's expected that a single casual user would remain well under Google's free usage limits and would never incur charges for this; however, they do need to set up a Google API account with a payment method.
+- **GOOGLE MAPS MAP ID** This is another Google Maps API thing you need to create and use.
+   - It's expected that a single casual user would remain well under Google's free usage limits and would never incur charges for this; however, they do need to set up a Google API account with a payment method.
+- Your own Google Maps timeline history, downloaded from Google Takeout, unzipped and saved in a folder on your Mac or PC.
 
 ### Installation
 
@@ -52,6 +55,7 @@ Both backend and frontend can be run on the same personal computer such as a Win
      ```
    - Create a Python virtual environment and activate it (if necessary for backend Python scripts).
    - Install Python dependencies if specified in any `requirements.txt` file.
+   - Edit "index.js" to change the baseDir to the local folder on your Mac/PC titled "Semantic Location History" (from the Google Maps Timeline history which you downloaded from Google Takeout and unzipped onto your machine).
 
 3. **Frontend Setup**:
    - Navigate to the `frontend/` folder and install dependencies:
@@ -102,8 +106,8 @@ This project is licensed under the GNU General Public License v3.0. See the `LIC
 
 ## Contributing
 
-Brad Baillod, a novice web developer, wrote this with ChatGPT 4o's help.  This is meant to be a bare bones replacement for the Google Maps Timeline web interface which is being turned off on Nov  19, 2024.
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+- Brad Baillod, a novice web developer, wrote this with ChatGPT 4o's help.  This is meant to be a bare bones replacement for the Google Maps Timeline web interface which is being turned off on Nov  19, 2024.
+- Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Acknowledgements
 
