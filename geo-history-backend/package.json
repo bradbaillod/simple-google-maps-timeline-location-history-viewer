@@ -1,0 +1,26 @@
+{
+  "name": "geo-history-backend",
+  "version": "0.0.1",
+  "description": "server backend handling the semantic location history",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"test\": \"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "keywords": [
+    "google",
+    "maps",
+    "location",
+    "history",
+    "server"
+  ],
+  "author": "Brad Baillod",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "moment-timezone": "^0.5.45"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
+  }
+}

@@ -1,0 +1,60 @@
+/* Container for the happenings */
+.happenings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add some space between each happening */
+}
+
+/* Each happening box */
+.happening-box {
+    display: flex;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Main content of the happening, occupying 65% of the box */
+.happening-main {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+/* Details of the happening, occupying 35% of the box */
+.happening-details {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 14px;
+}
+
+/* Text for the duration and time */
+.happening-duration {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.happening-time {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Add scrolling to the lower-left pane */
+.lower-left-pane {
+    height: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    border-top: 1px solid #ccc;
+}
+
+/* Remove time zone dropdown box styles */
+/* Removed styles related to time zone dropdown to simplify time zone management */

@@ -1,0 +1,43 @@
+/* Container for the whole app, ensuring left and right panes are aligned properly */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left pane styles */
+.left-pane-container {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Right pane styles */
+.right-pane {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+/* Ensuring both panes take the full height */
+html, body, #root, .app-container, .left-pane-container, .right-pane {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .left-pane-container, .right-pane {
+      width: 100%;
+      height: 50%;
+  }
+  .app-container {
+      flex-direction: column;
+  }
+}

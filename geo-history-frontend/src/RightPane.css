@@ -1,0 +1,45 @@
+/* Style for the right pane */
+.right-pane {
+    flex: 1;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* Style for the map container to ensure it fills the right pane */
+.map-container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-marker {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensuring all relevant elements occupy full space */
+html, body, #root, .right-pane, .map-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .right-pane {
+        width: 100%;
+        padding: 5px;
+    }
+    .map-container {
+        border-radius: 4px;
+    }
+}
