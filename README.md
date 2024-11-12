@@ -4,7 +4,7 @@ This project is a web application that allows users to view their Google Maps Ti
 
 - **Backend (geo-history-backend)**: Handles server-side operations, including reading Google Maps Timeline location history files and providing necessary data to the frontend.
 - **Frontend (geo-history-frontend)**: Provides a browser-based interface for users to view, filter, and interact with their location history data, including listing "happenings" for a selected date and visualizing them on a map using the Google Maps API.
-Both backend and frontend can be run on the same personal computer such as a Windows or Mac machine.  They each handle a different part of the functionality.
+- Both backend and frontend can be run on the same personal computer such as a Windows or Mac machine.  They each handle a different part of the functionality.
 
 ## Project Structure
 
