@@ -37,7 +37,7 @@ This project is a web application that allows users to view their Google Maps Ti
 - **Google Maps API Key**: You need a Google Maps API key to enable map features in the frontend. Set this key in the environment file as described below.
 - **GOOGLE MAPS MAP ID** This is another Google Maps API thing you need to create and use.
    - It's expected that a single casual user would remain well under Google's free usage limits for the Maps API and the Map ID, and would never incur charges from normal use; however, they do need to set up a Google API account with a payment method.
-- Your own Google Maps timeline history, downloaded from Google Takeout, unzipped and saved in a folder on your Mac or PC.
+- Your own Google Maps timeline history, downloaded from Google Takeout, unzipped and saved in a folder on your Mac or PC.  This is easy to do in the pre-11/19/2024 period using Google Takeout.  After 11/19, your cell phone will contain these files and getting them onto a PC will probably be slightly harder (but not impossible).
 
 ### Installation
 
