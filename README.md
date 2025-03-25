@@ -44,14 +44,14 @@ This project is a web application that allows users to view their Google Maps Ti
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/bradbaillod/simple-google-maps-timeline-location-history-viewer.git
+   git clone -b master https://github.com/bradbaillod/simple-google-maps-timeline-location-history-viewer.git
    cd simple-google-maps-timeline-location-history-viewer
    ```
 
 2. **Backend Setup**:
    - Navigate to the `backend/` folder and install dependencies:
      ```sh
-     cd backend
+     cd geo-history-backend
      npm install
      ```
    - Create a Python virtual environment and activate it (if necessary for backend Python scripts).  (the instructions below assume that this virtual environment is given the name "venv")
@@ -61,7 +61,7 @@ This project is a web application that allows users to view their Google Maps Ti
 3. **Frontend Setup**:
    - Navigate to the `frontend/` folder and install dependencies:
      ```sh
-     cd ../frontend
+     cd ../geo-history-frontend
      npm install
      ```
 
